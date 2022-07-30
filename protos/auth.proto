@@ -1,0 +1,24 @@
+syntax = "proto3";
+package authPackage;
+
+message Register{
+    string firstName = 1;
+    string lastName = 2;
+    string email = 3;
+    string phone = 4;
+    string password = 5;
+}
+message login {
+    string phone = 1;
+    string password = 2;
+}
+message loginResult {
+    string accessToken = 1;
+    string refreshToken = 2;
+}
+message registerResult {
+    string message = 1;
+}
+message resetPassword{
+    string phone = 1;
+}
